@@ -1,3 +1,10 @@
+/*
+    Lenguajes de programacion 1.
+    Daniel Robayo 18-11086.
+
+    Pregunta 1, parte b.
+*/
+
 import std.stdio;
 import std.conv;
 import core.exception;
@@ -47,6 +54,10 @@ void main(string[] args)
 
 }
 
+/*
+    Dada una cadena de caracteres w y un entero no-negativo l,
+    devuelve la rotacion de k posiciones de la cadena w.
+*/
 string rotar(string w, int k) 
 {
     if (w == "" || k == 0)
