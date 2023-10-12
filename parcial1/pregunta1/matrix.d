@@ -65,6 +65,9 @@ void main (string[] args)
     }
 }
 
+/*
+    Dada una matriz, calcular su transpuesta
+*/
 int[][] transpose(int[][] m, int n) 
 {   
     int [][] trans;
@@ -84,6 +87,9 @@ int[][] transpose(int[][] m, int n)
     return trans;
 }
 
+/*
+    Dada dos matrices, a y b, calcular el producto de las matrices.
+*/
 int[][] mutl_matrix(int[][] a, int[][] b, int n)
 {
     int[][] mult;
