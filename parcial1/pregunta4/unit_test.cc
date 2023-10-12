@@ -3,6 +3,7 @@
 #include <cmath>
 
 TEST(vector, vectorIntSum) {
+  // sumar dos vectores con componentes enteras
   Vector v1, v2, res;
 
   v1 = Vector{40, 11, 17};
@@ -10,13 +11,13 @@ TEST(vector, vectorIntSum) {
   
   res = v1+v2;
 
-  // Expect equality.
   EXPECT_EQ(res.x, 54);
   EXPECT_EQ(res.y, 32);
   EXPECT_EQ(res.z, 52);
 }
 
 TEST(vector, vectorFloatSum) {
+  // sumas dos vectores con componentes reales
   Vector v1, v2, res;
 
   v1 = Vector{11.1, 8.1, 34.1};
@@ -24,13 +25,13 @@ TEST(vector, vectorFloatSum) {
 
   res = v1+v2;
 
-  // Expect equality.
   EXPECT_EQ(res.x, 18.6);
   EXPECT_EQ(res.y, 30.9);
   EXPECT_EQ(res.z, 49.7);
 }
 
 TEST(vector, vectorIntSub) {
+  // restar dos vectores con componentes enteras
   Vector v1, v2, res;
 
   v1 = Vector{32, 15, 26};
@@ -38,13 +39,13 @@ TEST(vector, vectorIntSub) {
   
   res = v1-v2;
 
-  // Expect equality.
   EXPECT_EQ(res.x, 31);
   EXPECT_EQ(res.y, 23);
   EXPECT_EQ(res.z, 34);
 }
 
 TEST(vector, vectorFloatSub) {
+  // restar dos vectores con componentes reales
   Vector v1, v2, res;
 
   v1 = Vector{49.8, -2.6, 6.6};
@@ -52,13 +53,13 @@ TEST(vector, vectorFloatSub) {
   
   res = v1-v2;
 
-  // Expect equality.
   EXPECT_EQ(res.x, 32.8);
   EXPECT_EQ(res.y, -5.2);
   EXPECT_EQ(res.z, 0);
 }
 
 TEST(vector, vectorIntDot) {
+  // producto punto de dos vectores con componentes enteras
   Vector v1, v2;
   double res;
 
@@ -67,11 +68,11 @@ TEST(vector, vectorIntDot) {
   
   res = v1%v2;
 
-  // Expect equality.
   EXPECT_EQ(res, (12*-4) + (26*63) + (44*-92));
 }
 
 TEST(vector, vectorFloatDot) {
+  // producto punto de dos vectores con componentes raeles
   Vector v1, v2;
   double res;
 
@@ -80,23 +81,23 @@ TEST(vector, vectorFloatDot) {
   
   res = v1%v2;
 
-  // Expect equality.
   EXPECT_EQ(res, (86.9*18.8) + (-3.8*-9.7) + (0*6.6));
 }
 
 TEST(vector, vectorDotNeutro) {
+  // elemento neutro del producto punto
   Vector v1, v2, v3;
 
   v1 = Vector{5, -36, 1000000};
   v2 = Vector{18.8,-999999.7, 6.6};
   v3 = Vector{0, 0, 0};
 
-  // Expect equality.
   EXPECT_EQ(v1%v3, 0);
   EXPECT_EQ(v2%v3, 0);
 }
 
 TEST(vector, vectorOrtogonalVectorialProduct) {
+  // propiedad de ortogonalidad del producto vectorial
   Vector v1, v2;
   
   v1 = Vector{45, -9654, 40};
@@ -106,6 +107,7 @@ TEST(vector, vectorOrtogonalVectorialProduct) {
 }
 
 TEST(vector, vectorParalelVectorialProduct) {
+  // propiedad de paralelismo del producto vectorial
   Vector v1,v2, res;
 
   v1 = Vector{1, 3, 2};
@@ -118,6 +120,7 @@ TEST(vector, vectorParalelVectorialProduct) {
 }
 
 TEST(vector, vectorNilpotentVectorialProduct) {
+  // propiedad de nilpotencia del producto vectorial
   Vector v1, v2, res;
 
   v1 = Vector{4.6, 5.6, 99999};
@@ -130,6 +133,7 @@ TEST(vector, vectorNilpotentVectorialProduct) {
 }
 
 TEST(vector, vectorVectorialProduct) {
+  // producto vectorial
   Vector v1, v2, res;
   
   v1 = Vector{4, 5, -9};
@@ -143,6 +147,7 @@ TEST(vector, vectorVectorialProduct) {
 }
 
 TEST(vector, vectorNormInt) {
+  // norma de un vector con componentes enteras
   Vector v1;
   
   v1 = Vector{27, -202, 69};
@@ -151,6 +156,7 @@ TEST(vector, vectorNormInt) {
 }
 
 TEST(vector, vectorNormFloat) {
+  // norma de un vector con componentes reales
   Vector v1;
   
   v1 = Vector{33.27, -29.202, 3.14};
@@ -159,6 +165,7 @@ TEST(vector, vectorNormFloat) {
 }
 
 TEST (vector, vectorNormDot) {
+  // la norma debe ser a la raiz cuadrada del producto punto del mismo vector
   Vector v1;
 
   v1 = Vector{2, 434, 1942};
@@ -167,6 +174,7 @@ TEST (vector, vectorNormDot) {
 }
 
 TEST(vector, vectorSumEscalar) {
+  // sumar un vector con un escalar
   Vector v1, res;
 
   v1 = Vector{-555, -999, -888};
@@ -178,6 +186,7 @@ TEST(vector, vectorSumEscalar) {
 }
 
 TEST(vector, vectorSubEscalar) {
+  // restar un vector con un escalar
   Vector v1, res;
 
   v1 = Vector{75634, 0, -52345};
@@ -189,6 +198,7 @@ TEST(vector, vectorSubEscalar) {
 }
 
 TEST(vector, vectorDivEscalar) {
+  // dividir un escalar por un vector
   Vector v1, res;
 
   v1 = Vector{546123, 653345, -642345234};
@@ -200,6 +210,7 @@ TEST(vector, vectorDivEscalar) {
 }
 
 TEST(vector, vectorMultEscalar) {
+  // multiplicar un vector por un escalar
   Vector v1, res;
 
   v1 = Vector{-45923, 1234, -53};
@@ -212,6 +223,7 @@ TEST(vector, vectorMultEscalar) {
 
 
 TEST(vector, vectorOp1) {
+  // sean v1, v2, v3 vectore, calcular v1 * v2 + v3
   Vector v1, v2, v3, res;
 
   v1 = Vector{423, -65, 3};
@@ -225,6 +237,7 @@ TEST(vector, vectorOp1) {
 }
 
 TEST(vector, vectorOp2) {
+  // sean v1, v2, v3 vectore, calcular (v2 + v2) * (v3 - v1)
   Vector v1, v2, v3, res;
 
   v1 = Vector{423, -65, 3};
@@ -238,6 +251,7 @@ TEST(vector, vectorOp2) {
 }
 
 TEST(vector, vectorOp3) {
+  // sean v1, v2, v3 vectore, calcular (v1 * 3) + &v1
   Vector v1, res;
 
   v1 = Vector{0, 3, 4};
@@ -249,6 +263,7 @@ TEST(vector, vectorOp3) {
 }
 
 TEST(vector, vectorOp4) {
+  // sean v1, v2, v3 vectore, calcular (v2 + v2) * (v3 % v1)
   Vector v1, v2, v3, res;
 
   v1 = Vector{3, -65, 3};

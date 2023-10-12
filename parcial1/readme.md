@@ -106,5 +106,11 @@ $ sudo apt-get install cmake
 ``` 
 
 ``` cpp
-//
+// construccion
+$cmake -S . -B build
+$cmake --build build
+
+// ejecucion de las pruebas unitarias
+$cd build
+$ctest
 ```
