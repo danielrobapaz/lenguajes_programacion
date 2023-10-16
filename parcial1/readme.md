@@ -83,19 +83,19 @@ D no cuenta con interpretador y ofrece varios [compiladores](https://dlang.org/d
 -  solucion en /pregunta1/rotar.d
     ```c
     // compilar y ejecutar
-    $dmd rotar.d
-    $./rotar [string] chars_rotate
+    dmd rotar.d
+    ./rotar [string] chars_rotate
     ```
 #### (ii)
 - solucion en /pregunta1/matrix.d
     ```c
     // compilar y ejecutar
-    $dmd matrix.d
-    $./matrix
+    dmd matrix.d
+    ./matrix
     ```
 - El programa recibe N, el tamano de la matriz, y la matriz fila a fila separando los numeros por espaciones. en input.input se encuentra un ejemplo. Se recomienda ejecutar el programa de la siguiente manera
     ```
-    $./matrix < input.input
+    ./matrix < input.input
     ```
 
 ## Pregutna 3
@@ -103,22 +103,22 @@ Se encuentra en la carpeta /pregunta 3. Se resolvio usando Python y la libreria 
 ```c
 sudo apt install python3-pytest
 python3 main.py // para ejecutar el simulador
-pytest // para ejecutar las pruebas unitarias
+python3 unit_test.py // para ejecutar las pruebas unitarias
 ```
 
 ## Pregunta 4
 Se resolvio usando el lenguaje de programacion C++. El modulo que contiene el tipo  se Vector en el archivo /pregunta4/vector.h. Se uso el framework GoogleTest para las pruebas unitarias. Para la construccion de las pruebas se requiere tener instalado cmake.
 ```cpp
 // instalar cmake
-$ sudo apt-get install cmake
+ sudo apt-get install cmake
 ``` 
 
 ``` cpp
 // construccion
-$cmake -S . -B build
-$cmake --build build
+cmake -S . -B build
+cmake --build build
 
 // ejecucion de las pruebas unitarias
-$cd build
-$ctest
+cd build
+ctest
 ```
