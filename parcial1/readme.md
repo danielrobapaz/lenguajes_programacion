@@ -98,6 +98,14 @@ D no cuenta con interpretador y ofrece varios [compiladores](https://dlang.org/d
     $./matrix < input.input
     ```
 
+## Pregutna 3
+Se encuentra en la carpeta /pregunta 3. Se resolvio usando Python y la libreria PyTest. Se deben usar los siguientes comandos.
+```c
+sudo apt install python3-pytest
+python3 main.py // para ejecutar el simulador
+pytest // para ejecutar las pruebas unitarias
+```
+
 ## Pregunta 4
 Se resolvio usando el lenguaje de programacion C++. El modulo que contiene el tipo  se Vector en el archivo /pregunta4/vector.h. Se uso el framework GoogleTest para las pruebas unitarias. Para la construccion de las pruebas se requiere tener instalado cmake.
 ```cpp
