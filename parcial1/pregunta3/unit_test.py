@@ -1,7 +1,7 @@
 import unittest
 from buddy_system import Buddy_System
 
-class TestSum(unittest.TestCase):
+class Tests(unittest.TestCase):
     def test_CreateBuddySystem(self):
         bd = Buddy_System(18)
 

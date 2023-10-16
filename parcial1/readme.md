@@ -122,3 +122,10 @@ cmake --build build
 cd build
 ctest
 ```
+
+## Pregunta 5
+Se resolvio usando el lenguaje de programacion Python. Se encuentra en la carpeta /pregunta5
+```c
+python3 main.py // ejecucion del programa
+python3 unit_test.py // para ejecutar pruebsa unitarias
+```
