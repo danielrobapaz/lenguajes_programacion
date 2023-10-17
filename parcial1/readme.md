@@ -129,3 +129,9 @@ Se resolvio usando el lenguaje de programacion Python. Se encuentra en la carpet
 python3 main.py // ejecucion del programa
 python3 unit_test.py // para ejecutar pruebsa unitarias
 ```
+
+## Pregunta 6
+Se resolvio usando el lenguaje de programacion javascript. Se encuentra en la carpeta /pregutna6
+```c
+python3 golf.p num
+```
