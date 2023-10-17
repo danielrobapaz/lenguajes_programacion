@@ -3,6 +3,10 @@
 
     La asgiancion de bloques se represento usando un arbol binario
     usando la clase Node.
+    
+    Autor: Daniel Robayo
+    Carnet: 18-11086
+    Lenguajes de programacion CI_3641
 """
 
 from node import Node
