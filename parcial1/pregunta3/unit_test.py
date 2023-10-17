@@ -1,3 +1,10 @@
+"""
+    Pruebas unitarias automatizadas para el objeto Buddy_System
+
+    Autor: Daniel Robayo
+    Carnet: 18-11086
+    Lenguajes de programacion CI-3641
+"""
 import unittest
 from buddy_system import Buddy_System
 

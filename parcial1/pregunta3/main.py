@@ -1,3 +1,17 @@
+"""
+    Cliente para probar interactivamente el simulador de memoria Buddy system.
+    El programa pide un input desde la cmd y devuelve el resultado 
+
+    Se pueden ejecutar las siguientes acciones
+    - Reservar memoria a un proceso
+    - Liberar la memoria reservada por un proceso
+    - Mostar las listas de bloques asignados y libres
+
+    Autor: Daniel Robayo
+    Carnet: 18-11086
+    lenguajes de programcion CI-3641
+"""
+
 from buddy_system import Buddy_System
 import sys
 

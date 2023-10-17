@@ -1,3 +1,10 @@
+"""
+    Implementacion del simulador del buddy system.
+
+    La asgiancion de bloques se represento usando un arbol binario
+    usando la clase Node.
+"""
+
 from node import Node
 from math import floor, log
 
@@ -5,11 +12,14 @@ class Buddy_System():
     def __init__(self, n):
         if (n <= 0):
             raise Exception("La cantidad de bloques debe ser mayor o igual que cero")
-        self.total_blocks = 2**floor(log(n, 2))
-        self.root = Node(self.total_blocks)
+        self.total_blocks = 2**floor(log(n, 2)) # siempre se escoge la potencia de dos mas cercana
+        self.root = Node(self.total_blocks) # se inicializa el arbol
         self.empty_blocks = { self.total_blocks: 1}
         self.assigned_blocks = {}
 
+    """
+        Se reserva un bloque a un proceso, si el proceso ya existe no se hace nada
+    """
     def reserve(self, name, size):
         # de ser posible, asignamos un bloque de tamano size al proceso name
         # retorna false si no se puede asignar el bloque
@@ -21,7 +31,12 @@ class Buddy_System():
         self.assigned_blocks = {}
         self.update_list(self.root, self.empty_blocks, self.assigned_blocks)
 
+    """
+        Libera el bloque asignado al proceso
 
+        Primero se desasigna el proceso y luego se usa un algoritmo
+        de punto dijo para fundir los bloques que se puedan fundir
+    """
     def free(self, name):
         # conseguimos un bloque y lo desasignamos
         if not any(name in self.assigned_blocks[b] for b in self.assigned_blocks.keys()):
@@ -51,6 +66,9 @@ class Buddy_System():
         self.empty_blocks = curr_e
         self.assigned_blocks = curr_a
 
+    """
+        Muestra la lista de bloques libres y asignados en formato tabular
+    """
     def show(self):
         print(".: Bloque asignados:.")
         print("tamano bloques | procesos asignados | cantidad")
@@ -63,6 +81,10 @@ class Buddy_System():
         for b in self.empty_blocks:
             print(f"{b} | {self.empty_blocks[b]}")
 
+    """
+        Recorre el arbol de bloques asignados hasta encontrar un bloque 
+        para el proceso.
+    """
     def allocate(self, node, name, size):
         # ubicamos el bloque que asignaremos
         if node.is_leaf() and node.name == "":
@@ -96,7 +118,11 @@ class Buddy_System():
                 return can_allocate
             
             return False
-        
+    
+    """
+        Recorre el arbol de bloques asignados hasta encontrar
+        el proceso deseado para desasignarlo.
+    """
     def unassigned_block(self, node, name):
         if node.name == name:
             node.name = ""
@@ -107,6 +133,11 @@ class Buddy_System():
             if not node.right is None:
                 self.unassigned_block(node.right, name)
 
+    """
+        Recorre el arbol de bloques asignados hasta encontrar un padre
+        tal que sus hijos sean hojas desasignadas para eliminar las hojas
+        del arbol.
+    """
     def join_blocks(self, node):
         if not node.is_leaf() and node.left.is_leaf()  and node.right.is_leaf():
             if node.left.name == "" and node.right.name == "":
