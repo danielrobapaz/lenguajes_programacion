@@ -1,3 +1,19 @@
+/*
+    Implementacion del struct Vector. La implementacion incluye 
+    la sobrecarga de operadores como se sigue:
+
+    - Suma de vectores con +
+    - Resta de vectores con -
+    - Producto cruz de vectores con *
+    - Producto punto con %
+    - Norma con &
+    - Operaciones aritmeticas basicas de vectores con escalares
+
+    Autor: Daniel Robayo
+    Carnet: 18-11086
+    Lenguajes de programacion CI_3641
+*/
+
 #include <cmath>
 
 class Vector {

@@ -1,3 +1,11 @@
+/*
+  Programa para realizar pruebas unitarias en C++
+
+  Autor: Daniel Robayo
+  Carnet: 18-11086
+  Lenguajes de programacion CI_3641
+*/
+
 #include "vector.h"
 #include <gtest/gtest.h>
 #include <cmath>
