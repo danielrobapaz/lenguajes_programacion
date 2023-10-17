@@ -133,5 +133,5 @@ python3 unit_test.py // para ejecutar pruebsa unitarias
 ## Pregunta 6
 Se resolvio usando el lenguaje de programacion javascript. Se encuentra en la carpeta /pregutna6
 ```c
-python3 golf.p num
+python3 golf.py num
 ```

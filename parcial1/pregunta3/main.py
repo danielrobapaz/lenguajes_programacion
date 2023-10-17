@@ -62,7 +62,7 @@ def main():
                 raise Exception('Operacion invalida')
 
     except Exception as exp:
-        print(exp.with_traceback())
+        print(exp.args[0])
 
     finally:
         print('.:Cerrando simulacion:.')

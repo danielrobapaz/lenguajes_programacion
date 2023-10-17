@@ -12,6 +12,6 @@ def c(n,a=0,b=1):
     return c(n-1,b,a+b)
 def t():
     return c(f(g((l**4-l**2)/12))+1)
-y=t(l)
+y=t()
 def p():
     print(y)
