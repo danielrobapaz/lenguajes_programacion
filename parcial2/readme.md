@@ -3,7 +3,8 @@ Para evitar inconsistencia, los programas entregados se deben ejecutar en un sis
 
 ## Pregunta 1
 El lenguaje escogido fue Ruby. 
-### (i) Estructuras de control.
+### (a) De una breve descripcion del lenguaje escodigo.
+#### (i) Estructuras de control.
 1. Secuenciacion: La secuenciaion en ruby es el salto de linea.
 2. Seleccion: La seleccion en ruby. Ademas de contar con if-then-else tambien se puede usar case-when.
 ```ruby
@@ -110,10 +111,10 @@ rescue ExceptionA => a
 end
 ```
 
-### (ii) Expressiones
+#### (ii) Expressiones
 Ruby es un lenguaje ortogonal por lo que todo puede ser evaluado como un expression y va a devolver in valor. Ruby tiene evaluacion aplicativa por los que las expressiones se evaluan antes de ser pasados a una funcion y evalua las expressiones de izquierda a derecha. En el caso de los operadores bitwise ruby usa cortocircuito.
 
-### (iii) Tipos de datos
+#### (iii) Tipos de datos
 Ruby ofrece los siguientes tipos de datos.
 - Numbers: Enteros o reales.
 - Boolean.
@@ -147,7 +148,7 @@ end
 nueva_variables = Mi_Dato_nuevo.new(...)
 ```
 
-### (iv) Sistema de tipos.
+#### (iv) Sistema de tipos.
 El sistema de tipos de ruby realiza la verificacin de tipos en forma dinamica. Como consecuencia, no es necesario declarar una variable para usarla. Sin embargo, al momento de ejecucion ocurriria un error.
 
 En ruby la equivalencia de tipos es estructural tanto para los tipos proveeidos por el lenguje como para los tipos que defina el programador. En Ruby los tipos que son compatbiles son aquellos que son equivalentes. Asimismo, si hay un metodo o funcion que se efectua sobre tipos de datos numericos, el objeto que llama o el argumento que se recibe tiene que ser de un tipo equivalente.
@@ -181,12 +182,21 @@ Como en ruby las variables pueden ser de cualquier tipo no se tienen que realiza
 
 Por ultimo, el lenguaje cuenta con inferencia de tipos. Al ser un lenguaje debilmente tipado, la inferencia de tipos ocurre cada vez que crea una variable y en parametros que recibem funciones y metodos.
 
-### (a)
-### (b)
+### (b) Implemente los siguientes programas.
 #### (i)
-#### (ii)
+El codigo se encuentra en ```/pregunta1/Church.rb```. En el archivo se encuentra la definicion de; tipo ```Church```.
 
-## Pregutna 3
+#### (ii)
+El codigo se encuentra en ```/pregunta1/Arbol_binario.rb```. En el archivo se encuentra la definicion del tipo ```Arbol_binario```.
+
+## Pregunta 2
+Lenguaje escogido ```python version 3.11```. Para la ejecucion hacer los siguientes comandos
+```c
+python3 main.py // para cliente
+python3 unit_test.py // para pruebas unitarias
+```
+
+## Pregunta 3
 
 ## Pregunta 4
 
