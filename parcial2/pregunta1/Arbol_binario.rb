@@ -61,7 +61,7 @@ class Arbol_binario
         end
 
         if not val_arbol_der == nil
-            es_max = es_max and @val <= val_arbol_der
+            es_max = es_max and val_arbol_der <= @val
         end 
         
         if not rama_izq == nil
