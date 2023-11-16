@@ -255,10 +255,10 @@ Como se puede observar, la version recursiva tiene una complejidad exponiencial 
 
 Ademas, se compararon todos los algorimos en el rango $(0\leq n\leq130)$ y se obtuvo lo siguiente.
 
-![comparativo_todos](/pregunta4/img/comparativo_130.png)
+![comparativo_130](/pregunta4/img/comparativo_130.png)
 *Figura 4*: Comparacion de las 3 veriones con un rango de $n$ reducido.
 
-![](/pregunta4/img/comparativo_cola_iterativo.png)
+![comparacion_cola_iterativo](/pregunta4/img/comparativo_cola_iterativo.png)
 *Figura 5:* Comparacion entre la version recursiva de cola y iterativa.
 
 Se puede observar que en $n\leq110$ las tres implementaciones tienen un desempeno muy similar, siendo la mas eficiente la recursiva. Sin embargo, para casos mas grandes, la version iterativa empieza a crecer rapidamente. Luego, se observa que las versiones iterativas y de cola tienen un desempeno muy bueno y muy parecido, siendo la iterativa mas rapida.
