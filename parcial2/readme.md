@@ -233,6 +233,12 @@ La implementacion de las funciones se encuentra el ```pregunta4/Familia_De_Funci
 python3 main.py
 ```
 
+El codigo de ejecuto sobre una laptop con un procesador *Intel i5 12va generacion* y *40gb de RAM*. El archivo ```pregunta4/analisis_comparativo.ipynb``` genera los graficos del analisis. Para ejecutar el archivo ```main.py``` y ```analisis_comparativo.ipynb``` se tienen que instalar los paquetes correspondientes con el siguiente comando
+
+```c
+pip install -r requerimientos.txt
+```
+
 ### Analisis comparativo
 Para esta parte se decidio crear un cuaderno de jupyter y usar librerias de visualizacion de datos. Se evaluaron las tres implementaciones usando tamanos de entrada entre 0 y 300 dando pasos de 10 en 10. De cada implementacion se obtuvo lo siguiente. 
 
@@ -245,7 +251,7 @@ Para esta parte se decidio crear un cuaderno de jupyter y usar librerias de visu
 ![iterativo](/pregunta4/img/iterativo.png)
 *Figura 3*: Desempeno de la implementacion iterativa.
 
-Como se puede observar, la version recursiva tiene una complejidad exponiencial mientras que las otras dos tienen un comportamiento lineal. Ademas, para todas las versiones, el tiempo entre $0 <= n < 41$ permanece *constante*. Luego, es directo observar que el que tuvo peor desempeno mientras mas crece $n$ fue el algoritmo recursivo. Este algorimo para el caso mas grande $(n=290)$ duro $4675$ segundos. Mientras que las versiones de cola e iterativas duraron $0.00033$ y $0.00025$ segundos respectivamente.
+Como se puede observar, la version recursiva tiene una complejidad exponiencial mientras que las otras dos tienen un comportamiento lineal. Ademas, para todas las versiones, el tiempo entre $0 \leq n \lt 41$ permanece *constante*. Luego, es directo observar que el que tuvo peor desempeno mientras mas crece $n$ fue el algoritmo recursivo. Este algorimo para el caso mas grande $(n=290)$ duro $4675$ segundos. Mientras que las versiones de cola e iterativas duraron $0.00033$ y $0.00025$ segundos respectivamente.
 
 Ademas, se compararon todos los algorimos en el rango $(0\leq n\leq130)$ y se obtuvo lo siguiente.
 
@@ -255,7 +261,9 @@ Ademas, se compararon todos los algorimos en el rango $(0\leq n\leq130)$ y se ob
 ![](/pregunta4/img/comparativo_cola_iterativo.png)
 *Figura 5:* Comparacion entre la version recursiva de cola y iterativa.
 
-Se puede observar que en $n\leq110$ las tres implementaciones
+Se puede observar que en $n\leq110$ las tres implementaciones tienen un desempeno muy similar, siendo la mas eficiente la recursiva. Sin embargo, para casos mas grandes, la version iterativa empieza a crecer rapidamente. Luego, se observa que las versiones iterativas y de cola tienen un desempeno muy bueno y muy parecido, siendo la iterativa mas rapida.
+
+Finalmente, se pudo observar la diferencia entre las 3 versiones con respecto a su eficiencia en tiempo. Se concluye que la version ambas versiones, la iterativa y la de cola, tienen muy buen desempeno. Sin embargo, la version iteravia se comporta mejor para $n$ mayores ya que no necesita de la pila para su ejeccion.
 ## Pregunta 5
 
 ## Pregunta 6
