@@ -264,6 +264,13 @@ Ademas, se compararon todos los algorimos en el rango $(0\leq n\leq130)$ y se ob
 Se puede observar que en $n\leq110$ las tres implementaciones tienen un desempeno muy similar, siendo la mas eficiente la recursiva. Sin embargo, para casos mas grandes, la version iterativa empieza a crecer rapidamente. Luego, se observa que las versiones iterativas y de cola tienen un desempeno muy bueno y muy parecido, siendo la iterativa mas rapida.
 
 Finalmente, se pudo observar la diferencia entre las 3 versiones con respecto a su eficiencia en tiempo. Se concluye que la version ambas versiones, la iterativa y la de cola, tienen muy buen desempeno. Sin embargo, la version iteravia se comporta mejor para $n$ mayores ya que no necesita de la pila para su ejeccion.
-## Pregunta 5
 
+## Pregunta 5
+El lenguaje usado para la implementacion del iterador fue ```python version 3.11```. La implementacion del simulador del sistema de tipos se encuentra en ```pregunta5/Manejador_De_Tipos_De_Datos.py```. Para ejecutar el cliente y los casos de prueba
+```c
+python3 main.py //cliente
+python3 unit_test.py // casos de prueba
+```
+
+Los registros se alinean a la potencia de 4 mayor mas cercana, Por ejempplo, si el tipo ocupa 17 bytes, su alineacion es 20.
 ## Pregunta 6
