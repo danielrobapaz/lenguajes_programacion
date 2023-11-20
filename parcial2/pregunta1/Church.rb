@@ -104,7 +104,6 @@ class Suc < Church
 
     def to_s
         @val
-
     end
 end
 
