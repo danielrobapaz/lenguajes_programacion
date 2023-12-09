@@ -1,2 +1,3 @@
 *.jar
 *.class
+/pregunta4/__pycache__

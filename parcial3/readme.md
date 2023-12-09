@@ -100,5 +100,11 @@ Para compliar ```DFS.kt``` se debe incluir ```Secuencia.kt```, ```Pila.kt```, ``
 ## Pregunta 3
 
 ## Pregunta 4
+La imlementacion del manejador de tablas de metodos virtuales se encuentra ```pregunta4/Tabla_de_metodos.py```.
+
+```c
+python main.py // para ejecutar cliente
+python unit_test.py // para ejecutar las pruebas unitarias
+```
 
 ## Pregunta 5
