@@ -46,7 +46,7 @@ class TengoCamposConDistintaVisibilidad<T> {
 Como ```Kotlin``` se ejecuta sobre la ```JVM```, este con un el recolector de basuar de la maquina virtual. Sin embargo, se puede cambiar la configuracion de la misma a necesidad del programador.
 
 #### (iii) Diga si el lenguaje usa asociacion estatica o dinamica de metodos.
-El lenguaje cuenta con asociacion estatica de metodos por omision.
+El lenguaje cuenta con asociacion estatica de metodos por omision. Se puede usar la palabra reservada ```final``` para indicar que un metodo se asocia estaticamente.
 
 #### (iv) Describa la jerarquia de tipos.
 La raiz de la jerarquia de tipos en ```Kotlin``` es el tipo ```Any```. Este solo cuanta con los metodos ```equals()```, ```hashCode()``` y ```toString()```. De manera de que una clase que no cuente con una subclase explicita, es subclase de ```Any```.
@@ -98,6 +98,7 @@ Para compliar ```DFS.kt``` se debe incluir ```Secuencia.kt```, ```Pila.kt```, ``
 ## Pregunta 2
 
 ## Pregunta 3
+Valores de las constantes: $X=0$, $Y=8$ y $Z=6$. El paso a paso y la salida se encuentra en ```pregunta3/asociaciones.pdf```
 
 ## Pregunta 4
 La imlementacion del manejador de tablas de metodos virtuales se encuentra ```pregunta4/Tabla_de_metodos.py```.
