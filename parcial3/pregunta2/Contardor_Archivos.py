@@ -31,7 +31,3 @@ class Contador_Archivos:
 
     def obtener_numero_archivos(self) -> int:
         return self.numero_archivos
-    
-
-contador = Contador_Archivos('/home/daniel/Documents/Trimestre/Lenguajes/lenguajes_programacion/parcial3')
-print(contador.obtener_numero_archivos())
