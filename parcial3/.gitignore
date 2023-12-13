@@ -1,3 +1,5 @@
 *.jar
 *.class
 /pregunta4/__pycache__
+/pregunta2/.venv
+/pregunta2/__pycache__
