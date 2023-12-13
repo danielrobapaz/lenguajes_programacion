@@ -149,13 +149,13 @@ if __name == "__main__":
 El modulo ```multiproccessing``` provee la clase ```shared_memory``` que permite el manejo de memoria compartida entre procesos. Ademas, tambien provee la clase ```Queue``` para el envio de mensaje entre procesos
 
 #### (iii) Describa el mecanismo de sincronizacion que utiliza el lenguaje
-Para la sincronizacion de hilos se cuenta con ```threading.Lock``` la cual implementa un mutex. Analigamente, ```multiproccesing``` cuenta con la clase ```Lock``` la cual cumple con la misma funcion.
+Para la sincronizacion de hilos se cuenta con ```threading.Lock``` la cual implementa un mutex. Analogamente, ```multiproccesing``` cuenta con la clase ```Lock``` la cual cumple con la misma funcion.
 
 ### (b) Implementacion.
 #### (i)
 La implemencion de los vectores se encuentra en ```pregunta2/Vectores.py```. La clase recibe una lista con tantos elemntos como dimensiones tenga el vector. El producto punto divide los las coordenadas de ambos vectores en 4 segmentos y ejecuta el producto punto de de cada segmento usando hilos mediante la libreria ```threading```, luego, se suma el resultado de estos.
 
-Algunos resultados entre usar este producto punto y el metodo ```np.dot``` de ```numpy``` fuerton
+Algunos resultados entre usar este producto punto y el metodo ```np.dot``` de ```numpy``` fueron
 ```c
 n = 10000
 con hilos: 0.008538007736206055 segundos
@@ -190,7 +190,8 @@ El archivo con el cual se ejecutaron estas pruebas se encuentre en ```pregunta2/
 
 #### (ii)
 
-Se implemento mediante la clase que se encuentra en ```pregunta2/Contador_Arcivos.py``` la cual recibe la direccion del direcctorio. Luego, al momento de instanciar la clase realiza el conteo de los archivos. Para obtener el numero de archivos se tiene el metodo ```obtener_numero_archivos()```
+Se implemento mediante la clase que se encuentra en ```pregunta2/Contador_Arcivos.py``` la cual recibe la direccion del direcctorio. Luego, al momento de instanciar la clase realiza el conteo de los archivos. Para obtener el numero de archivos se tiene el metodo ```obtener_numero_archivos()```.
+
 ## Pregunta 3
 Valores de las constantes: $X=0$, $Y=8$ y $Z=6$. El paso a paso y la salida se encuentra en ```pregunta3/pregunta3.pdf```
 
